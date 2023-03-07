@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<style>
+    fieldset{
+        background-color: #eeeeee;
+
+    }
+    legend{
+        background-color: blue;
+        color:white;
+        padding: 5px 10px;
+    }
+</style>
+<body>
+  
+        
+            <h1> Cadastrar usuário </h1>
+            
+            <fieldset>
+                <legend>1 Dados pessoais</legend>
+                <label for="fname "> Nome:</label>
+                <input type="text" id="fname" name="fname"><br> <br> 
+                <labe for="email">Email:</labe>
+                <input type="email" id="email" name="email"><br> <br> 
+                <label for="pwd">Senha:</label>
+                <input type="password" id="pwd" name="pwd" minlength="8"><br> <br> 
+                <label for="pwd1">Confirma senha:</label>
+                <input type="password" id="pwd1" name="pwd" minlength="8">
+                <p>Idade:</p>
+                <input type="radio" id="html" name="idade" value="Acima de 17 anos">
+                <label for="Acima 17 anos">Acima de 17 anos</label>
+                <input type="radio" id="html" name="idade2" value="Abaixo ou igual de 17 anos">
+                <label for="Abaixo ou igual 17 anos">Abaixo ou igual de 17 anos</label>
+
+
+            </fieldset><br>
+            <fieldset action="/action_page.php">
+                <legend>2 perfil</legend>
+                <label for="w3review">Descrição</label>
+                <textarea id="w3review" name="w3review" rows="3" cols="40">
+
+                </textarea>
+                <form action="/action_page.php"><br> <br> 
+                <label name="work">Perfil trabalho</label>
+                <select name="work" id="work">
+                    <option value="Agronomia">Agronomia</option>
+                    <option value="Biotecnologia">Biotecnologia</option>
+                </select>
+        
+            </form>
+            <form action="/action_page.php">
+                <p>Interesse:</p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Programador">
+                <label for="vehicle1">Programador</label>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="design">
+                <label for="vehicle1">design</label>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Analista">
+                <label for="vehicle1">Analista</label>
+            </form>
+
+                
+            </fieldset>
+</body>
+    
+</html>
+
